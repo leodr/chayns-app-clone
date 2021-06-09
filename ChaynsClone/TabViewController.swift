@@ -8,7 +8,7 @@
 import UIKit
 
 class TabViewController: UITabBarController, UITabBarControllerDelegate {
-    var menuViewController: UIViewController?
+    var menuViewController: MenuViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,28 +16,24 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let menuVC = storyboard.instantiateViewController(withIdentifier: "Menu")
+
+        if let menuVCInstance = menuVC as? MenuViewController {
+            self.menuViewController = menuVCInstance
+        }
+
+        self.selectedViewController!.view.addSubview(menuVC.view)
+        menuVC.didMove(toParent: self.selectedViewController!)
+    }
+
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         guard viewController.tabBarItem.title == "Mehr" else {
             return true
         }
 
-        if self.menuViewController != nil {
-            self.closeMenu()
-        } else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let menuVC = storyboard.instantiateViewController(withIdentifier: "Menu")
-
-            if let menuVCInstance = menuVC as? MenuViewController {
-                menuVCInstance.dismissHandler = {
-                    self.closeMenu()
-                }
-            }
-
-            self.selectedViewController!.view.addSubview(menuVC.view)
-            menuVC.didMove(toParent: self.selectedViewController!)
-
-            self.menuViewController = menuVC
-        }
+        self.menuViewController?.toggle()
 
         return false
     }

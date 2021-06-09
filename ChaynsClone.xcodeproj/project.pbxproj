@@ -16,6 +16,8 @@
 		F71F362E266E59DF00900877 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F362D266E59DF00900877 /* HomeViewController.swift */; };
 		F71F3630266E5D5400900877 /* LocationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F362F266E5D5400900877 /* LocationDataModel.swift */; };
 		F71F3632266E5D8B00900877 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F3631266E5D8B00900877 /* LocationService.swift */; };
+		F72FC1202670F6A6008B4CE6 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72FC11F2670F6A6008B4CE6 /* TokenService.swift */; };
+		F72FC1222670F735008B4CE6 /* TokenPayloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72FC1212670F735008B4CE6 /* TokenPayloadModel.swift */; };
 		F77EDE7C266F57BA00A54EBA /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EDE7B266F57B900A54EBA /* LocationCollectionViewCell.swift */; };
 		F77EDE8D266F674E00A54EBA /* Font Awesome 5 Pro-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE8C266F674100A54EBA /* Font Awesome 5 Pro-Solid-900.otf */; };
 		F77EDE8E266F674E00A54EBA /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE88266F674100A54EBA /* Font Awesome 5 Brands-Regular-400.otf */; };
@@ -26,6 +28,7 @@
 		F77EDE99266F928B00A54EBA /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EDE98266F928B00A54EBA /* TabViewController.swift */; };
 		F7BFBFE12670C0DA00B4D0D6 /* FontTS-latest.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7BFBFE02670C0DA00B4D0D6 /* FontTS-latest.ttf */; };
 		F7BFBFE52670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BFBFE42670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift */; };
+		F7BFBFE72670ECDB00B4D0D6 /* NewHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BFBFE62670ECDB00B4D0D6 /* NewHomeViewController.swift */; };
 		F7F6CE142670A7B50022AE8B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6CE132670A7B50022AE8B /* MenuViewController.swift */; };
 		F7F6CE162670B3EE0022AE8B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6CE152670B3EE0022AE8B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,8 @@
 		F71F362D266E59DF00900877 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F71F362F266E5D5400900877 /* LocationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataModel.swift; sourceTree = "<group>"; };
 		F71F3631266E5D8B00900877 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F72FC11F2670F6A6008B4CE6 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		F72FC1212670F735008B4CE6 /* TokenPayloadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenPayloadModel.swift; sourceTree = "<group>"; };
 		F77EDE7B266F57B900A54EBA /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
 		F77EDE88266F674100A54EBA /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
 		F77EDE89266F674100A54EBA /* Font Awesome 5 Pro-Light-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Light-300.otf"; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 		F77EDE98266F928B00A54EBA /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		F7BFBFE02670C0DA00B4D0D6 /* FontTS-latest.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontTS-latest.ttf"; sourceTree = "<group>"; };
 		F7BFBFE42670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGridHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		F7BFBFE62670ECDB00B4D0D6 /* NewHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeViewController.swift; sourceTree = "<group>"; };
 		F7F6CE132670A7B50022AE8B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F7F6CE152670B3EE0022AE8B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,9 @@
 				F71F3619266E565300900877 /* AppDelegate.swift */,
 				F71F361B266E565300900877 /* SceneDelegate.swift */,
 				F71F361F266E565300900877 /* Main.storyboard */,
+				F72FC11F2670F6A6008B4CE6 /* TokenService.swift */,
+				F72FC1212670F735008B4CE6 /* TokenPayloadModel.swift */,
+				F7BFBFE62670ECDB00B4D0D6 /* NewHomeViewController.swift */,
 				F7BFBFE42670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift */,
 				F7F6CE152670B3EE0022AE8B /* SettingsViewController.swift */,
 				F7F6CE132670A7B50022AE8B /* MenuViewController.swift */,
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72FC1222670F735008B4CE6 /* TokenPayloadModel.swift in Sources */,
+				F7BFBFE72670ECDB00B4D0D6 /* NewHomeViewController.swift in Sources */,
 				F71F3630266E5D5400900877 /* LocationDataModel.swift in Sources */,
 				F71F361A266E565300900877 /* AppDelegate.swift in Sources */,
+				F72FC1202670F6A6008B4CE6 /* TokenService.swift in Sources */,
 				F71F361C266E565300900877 /* SceneDelegate.swift in Sources */,
 				F71F3632266E5D8B00900877 /* LocationService.swift in Sources */,
 				F77EDE7C266F57BA00A54EBA /* LocationCollectionViewCell.swift in Sources */,
