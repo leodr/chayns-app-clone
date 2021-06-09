@@ -55,6 +55,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FontTS-latest.ttf</string>
+		<string>TobitHeadline.ttf</string>
+		<string>Font Awesome 5 Pro-Solid-900.otf</string>
+		<string>Font Awesome 5 Brands-Regular-400.otf</string>
+		<string>Font Awesome 5 Duotone-Solid-900.otf</string>
+		<string>Font Awesome 5 Pro-Light-300.otf</string>
+		<string>Font Awesome 5 Pro-Regular-400.otf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

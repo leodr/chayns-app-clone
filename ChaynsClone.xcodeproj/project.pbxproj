@@ -3,27 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE5BB85588DDDA3BBE676BF7 /* Pods_ChaynsClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87F1203E6F2AD78AFB95786 /* Pods_ChaynsClone.framework */; };
 		F71F361A266E565300900877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F3619266E565300900877 /* AppDelegate.swift */; };
 		F71F361C266E565300900877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F361B266E565300900877 /* SceneDelegate.swift */; };
-		F71F361E266E565300900877 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F361D266E565300900877 /* ViewController.swift */; };
 		F71F3621266E565300900877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F361F266E565300900877 /* Main.storyboard */; };
 		F71F3623266E565300900877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71F3622266E565300900877 /* Assets.xcassets */; };
 		F71F3626266E565300900877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71F3624266E565300900877 /* LaunchScreen.storyboard */; };
+		F71F362E266E59DF00900877 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F362D266E59DF00900877 /* HomeViewController.swift */; };
+		F71F3630266E5D5400900877 /* LocationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F362F266E5D5400900877 /* LocationDataModel.swift */; };
+		F71F3632266E5D8B00900877 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71F3631266E5D8B00900877 /* LocationService.swift */; };
+		F77EDE7C266F57BA00A54EBA /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EDE7B266F57B900A54EBA /* LocationCollectionViewCell.swift */; };
+		F77EDE8D266F674E00A54EBA /* Font Awesome 5 Pro-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE8C266F674100A54EBA /* Font Awesome 5 Pro-Solid-900.otf */; };
+		F77EDE8E266F674E00A54EBA /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE88266F674100A54EBA /* Font Awesome 5 Brands-Regular-400.otf */; };
+		F77EDE8F266F674E00A54EBA /* Font Awesome 5 Pro-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE8B266F674100A54EBA /* Font Awesome 5 Pro-Regular-400.otf */; };
+		F77EDE90266F674E00A54EBA /* Font Awesome 5 Duotone-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE8A266F674100A54EBA /* Font Awesome 5 Duotone-Solid-900.otf */; };
+		F77EDE91266F674E00A54EBA /* Font Awesome 5 Pro-Light-300.otf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE89266F674100A54EBA /* Font Awesome 5 Pro-Light-300.otf */; };
+		F77EDE95266F69DB00A54EBA /* TobitHeadline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F77EDE94266F69DB00A54EBA /* TobitHeadline.ttf */; };
+		F77EDE99266F928B00A54EBA /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EDE98266F928B00A54EBA /* TabViewController.swift */; };
+		F7BFBFE12670C0DA00B4D0D6 /* FontTS-latest.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7BFBFE02670C0DA00B4D0D6 /* FontTS-latest.ttf */; };
+		F7BFBFE52670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BFBFE42670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift */; };
+		F7F6CE142670A7B50022AE8B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6CE132670A7B50022AE8B /* MenuViewController.swift */; };
+		F7F6CE162670B3EE0022AE8B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6CE152670B3EE0022AE8B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223B7457B6B4B9DA6EA11E82 /* Pods-ChaynsClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaynsClone.release.xcconfig"; path = "Target Support Files/Pods-ChaynsClone/Pods-ChaynsClone.release.xcconfig"; sourceTree = "<group>"; };
+		4B6501407E1B5A261DDD7B88 /* Pods-ChaynsClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaynsClone.debug.xcconfig"; path = "Target Support Files/Pods-ChaynsClone/Pods-ChaynsClone.debug.xcconfig"; sourceTree = "<group>"; };
+		A87F1203E6F2AD78AFB95786 /* Pods_ChaynsClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChaynsClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71F3616266E565300900877 /* ChaynsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaynsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71F3619266E565300900877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F71F361B266E565300900877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F71F361D266E565300900877 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F71F3620266E565300900877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F71F3622266E565300900877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F71F3625266E565300900877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F71F3627266E565300900877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F71F362D266E59DF00900877 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F71F362F266E5D5400900877 /* LocationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataModel.swift; sourceTree = "<group>"; };
+		F71F3631266E5D8B00900877 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F77EDE7B266F57B900A54EBA /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		F77EDE88266F674100A54EBA /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		F77EDE89266F674100A54EBA /* Font Awesome 5 Pro-Light-300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Light-300.otf"; sourceTree = "<group>"; };
+		F77EDE8A266F674100A54EBA /* Font Awesome 5 Duotone-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Duotone-Solid-900.otf"; sourceTree = "<group>"; };
+		F77EDE8B266F674100A54EBA /* Font Awesome 5 Pro-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Regular-400.otf"; sourceTree = "<group>"; };
+		F77EDE8C266F674100A54EBA /* Font Awesome 5 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Solid-900.otf"; sourceTree = "<group>"; };
+		F77EDE94266F69DB00A54EBA /* TobitHeadline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TobitHeadline.ttf; sourceTree = "<group>"; };
+		F77EDE98266F928B00A54EBA /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		F7BFBFE02670C0DA00B4D0D6 /* FontTS-latest.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontTS-latest.ttf"; sourceTree = "<group>"; };
+		F7BFBFE42670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGridHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		F7F6CE132670A7B50022AE8B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F7F6CE152670B3EE0022AE8B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5BB85588DDDA3BBE676BF7 /* Pods_ChaynsClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D27E810414FEB89BC697662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B6501407E1B5A261DDD7B88 /* Pods-ChaynsClone.debug.xcconfig */,
+				223B7457B6B4B9DA6EA11E82 /* Pods-ChaynsClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		846121105425F6E45F7C83D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A87F1203E6F2AD78AFB95786 /* Pods_ChaynsClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F71F360D266E565200900877 = {
 			isa = PBXGroup;
 			children = (
 				F71F3618266E565300900877 /* ChaynsClone */,
 				F71F3617266E565300900877 /* Products */,
+				0D27E810414FEB89BC697662 /* Pods */,
+				846121105425F6E45F7C83D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +110,35 @@
 			children = (
 				F71F3619266E565300900877 /* AppDelegate.swift */,
 				F71F361B266E565300900877 /* SceneDelegate.swift */,
-				F71F361D266E565300900877 /* ViewController.swift */,
 				F71F361F266E565300900877 /* Main.storyboard */,
+				F7BFBFE42670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift */,
+				F7F6CE152670B3EE0022AE8B /* SettingsViewController.swift */,
+				F7F6CE132670A7B50022AE8B /* MenuViewController.swift */,
+				F71F362D266E59DF00900877 /* HomeViewController.swift */,
 				F71F3622266E565300900877 /* Assets.xcassets */,
+				F77EDE87266F673500A54EBA /* fonts */,
 				F71F3624266E565300900877 /* LaunchScreen.storyboard */,
 				F71F3627266E565300900877 /* Info.plist */,
+				F71F362F266E5D5400900877 /* LocationDataModel.swift */,
+				F71F3631266E5D8B00900877 /* LocationService.swift */,
+				F77EDE7B266F57B900A54EBA /* LocationCollectionViewCell.swift */,
+				F77EDE98266F928B00A54EBA /* TabViewController.swift */,
 			);
 			path = ChaynsClone;
+			sourceTree = "<group>";
+		};
+		F77EDE87266F673500A54EBA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F7BFBFE02670C0DA00B4D0D6 /* FontTS-latest.ttf */,
+				F77EDE94266F69DB00A54EBA /* TobitHeadline.ttf */,
+				F77EDE88266F674100A54EBA /* Font Awesome 5 Brands-Regular-400.otf */,
+				F77EDE8A266F674100A54EBA /* Font Awesome 5 Duotone-Solid-900.otf */,
+				F77EDE89266F674100A54EBA /* Font Awesome 5 Pro-Light-300.otf */,
+				F77EDE8B266F674100A54EBA /* Font Awesome 5 Pro-Regular-400.otf */,
+				F77EDE8C266F674100A54EBA /* Font Awesome 5 Pro-Solid-900.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F71F362A266E565300900877 /* Build configuration list for PBXNativeTarget "ChaynsClone" */;
 			buildPhases = (
+				D671B22541DC18896ED897D0 /* [CP] Check Pods Manifest.lock */,
 				F71F3612266E565200900877 /* Sources */,
 				F71F3613266E565200900877 /* Frameworks */,
 				F71F3614266E565200900877 /* Resources */,
+				467986D7B02EAA6D685C1CF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +200,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77EDE90266F674E00A54EBA /* Font Awesome 5 Duotone-Solid-900.otf in Resources */,
+				F7BFBFE12670C0DA00B4D0D6 /* FontTS-latest.ttf in Resources */,
+				F77EDE8E266F674E00A54EBA /* Font Awesome 5 Brands-Regular-400.otf in Resources */,
 				F71F3626266E565300900877 /* LaunchScreen.storyboard in Resources */,
 				F71F3623266E565300900877 /* Assets.xcassets in Resources */,
+				F77EDE95266F69DB00A54EBA /* TobitHeadline.ttf in Resources */,
+				F77EDE91266F674E00A54EBA /* Font Awesome 5 Pro-Light-300.otf in Resources */,
+				F77EDE8D266F674E00A54EBA /* Font Awesome 5 Pro-Solid-900.otf in Resources */,
 				F71F3621266E565300900877 /* Main.storyboard in Resources */,
+				F77EDE8F266F674E00A54EBA /* Font Awesome 5 Pro-Regular-400.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		467986D7B02EAA6D685C1CF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaynsClone/Pods-ChaynsClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaynsClone/Pods-ChaynsClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaynsClone/Pods-ChaynsClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D671B22541DC18896ED897D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaynsClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F71F3612266E565200900877 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71F361E266E565300900877 /* ViewController.swift in Sources */,
+				F71F3630266E5D5400900877 /* LocationDataModel.swift in Sources */,
 				F71F361A266E565300900877 /* AppDelegate.swift in Sources */,
 				F71F361C266E565300900877 /* SceneDelegate.swift in Sources */,
+				F71F3632266E5D8B00900877 /* LocationService.swift in Sources */,
+				F77EDE7C266F57BA00A54EBA /* LocationCollectionViewCell.swift in Sources */,
+				F77EDE99266F928B00A54EBA /* TabViewController.swift in Sources */,
+				F71F362E266E59DF00900877 /* HomeViewController.swift in Sources */,
+				F7F6CE142670A7B50022AE8B /* MenuViewController.swift in Sources */,
+				F7F6CE162670B3EE0022AE8B /* SettingsViewController.swift in Sources */,
+				F7BFBFE52670DCA000B4D0D6 /* LocationGridHeaderCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +415,12 @@
 		};
 		F71F362B266E565300900877 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6501407E1B5A261DDD7B88 /* Pods-ChaynsClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2247Y8KST8;
 				INFOPLIST_FILE = ChaynsClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,10 +435,12 @@
 		};
 		F71F362C266E565300900877 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223B7457B6B4B9DA6EA11E82 /* Pods-ChaynsClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2247Y8KST8;
 				INFOPLIST_FILE = ChaynsClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
