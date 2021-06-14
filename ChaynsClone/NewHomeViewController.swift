@@ -26,7 +26,7 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
     private let reuseIdentifier = "LocationCell"
 
     private let sectionInsets = UIEdgeInsets(
-        top: 35.0,
+        top: 10.0,
         left: 20.0,
         bottom: 35.0,
         right: 20.0
@@ -122,8 +122,10 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
 
         let location = locations[indexPath.row]
 
-        cell.imageView.sd_setImage(with: URL(string: "https://sub60.tobit.com/l/\(location.id)"))
+        cell.imageView.sd_setImage(with: URL(string: "https://sub60.tobit.com/l/\(location.id)?size=120"))
         cell.label.text = location.name
+
+        cell.label.preferredMaxLayoutWidth = cell.bounds.width
 
         return cell
     }
@@ -154,7 +156,7 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+        return CGSize(width: view.frame.width, height: 240)
     }
 }
 
@@ -166,11 +168,11 @@ extension NewHomeViewController: UICollectionViewDelegateFlowLayout {
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let paddingSpace = sectionInsets.left * 2 + 8 * itemsPerRow
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
 
-        return CGSize(width: widthPerItem, height: widthPerItem * 1.2)
+        return CGSize(width: widthPerItem, height: widthPerItem * 1.48)
     }
 
     func collectionView(
@@ -186,6 +188,6 @@ extension NewHomeViewController: UICollectionViewDelegateFlowLayout {
         layout collectionViewLayout: UICollectionViewLayout,
         minimumLineSpacingForSectionAt section: Int
     ) -> CGFloat {
-        return sectionInsets.left
+        return CGFloat(4)
     }
 }

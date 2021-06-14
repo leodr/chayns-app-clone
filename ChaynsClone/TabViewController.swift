@@ -47,6 +47,9 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
     }
 
     func addMenu() {
+        self.menuViewController?.view.removeFromSuperview()
+        self.menuViewController?.removeFromParent()
+
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let menuVC = storyboard.instantiateViewController(withIdentifier: "Menu")
 
