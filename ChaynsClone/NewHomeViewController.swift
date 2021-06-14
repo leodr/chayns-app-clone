@@ -5,6 +5,7 @@
 //  Created by Driesch, Leonhard on 09.06.21.
 //
 
+import SDWebImage
 import UIKit
 
 enum ScrollingStage {
@@ -42,6 +43,8 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.isNavigationBarHidden = true
+
         LocationService.instance.getLocationData {
             response in
 
@@ -55,8 +58,12 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
 
         nameLabel.text = TokenService.instance.userName
-        print("Username: ")
-        print(TokenService.instance.userName)
+
+        let borderWidth = CGFloat(0.5)
+
+        headerBar.frame = headerBar.frame.insetBy(dx: -borderWidth, dy: -borderWidth)
+        headerBar.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.0).cgColor
+        headerBar.layer.borderWidth = borderWidth
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -83,6 +90,7 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
             headerBar.backgroundColor = nil
 
             UIView.animate(withDuration: 0.2) {
+                self.headerBar.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.0).cgColor
                 self.blurView.alpha = 0
                 self.smallChaynsLogo.alpha = 0
                 self.nameLabel.alpha = 1
@@ -90,12 +98,14 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
 
         case .blurry:
             UIView.animate(withDuration: 0.2) {
+                self.headerBar.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.4).cgColor
                 self.blurView.alpha = 1
                 self.smallChaynsLogo.alpha = 0
                 self.nameLabel.alpha = 1
             }
         case .logoShown:
             UIView.animate(withDuration: 0.2) {
+                self.headerBar.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.4).cgColor
                 self.blurView.alpha = 1
                 self.smallChaynsLogo.alpha = 1
                 self.nameLabel.alpha = 0
@@ -118,6 +128,16 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
         return cell
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let location = locations[indexPath.row]
+
+        let siteViewController = SiteViewController()
+
+        siteViewController.domain = "https://\(location.domain)"
+
+        navigationController?.pushViewController(siteViewController, animated: true)
+    }
+
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(
             ofKind: kind,
@@ -127,6 +147,8 @@ class NewHomeViewController: UIViewController, UICollectionViewDelegate, UIColle
 
         header.searchBar.layer.cornerRadius = 3
         header.searchBar.clipsToBounds = true
+        header.searchBar.layer.borderWidth = 1
+        header.searchBar.layer.borderColor = UIColor.systemGray5.cgColor
 
         return header
     }

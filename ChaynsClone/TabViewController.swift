@@ -17,6 +17,8 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let menuVC = storyboard.instantiateViewController(withIdentifier: "Menu")
 
@@ -24,8 +26,10 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
             self.menuViewController = menuVCInstance
         }
 
-        self.selectedViewController!.view.addSubview(menuVC.view)
-        menuVC.didMove(toParent: self.selectedViewController!)
+        if let viewController = self.selectedViewController {
+            viewController.view.addSubview(menuVC.view)
+            menuVC.didMove(toParent: viewController)
+        }
     }
 
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
@@ -38,13 +42,21 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
         return false
     }
 
-    func closeMenu() {
-        if let viewController = menuViewController {
-            viewController.willMove(toParent: nil)
-            viewController.view.removeFromSuperview()
-            viewController.removeFromParent()
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        self.addMenu()
+    }
 
-            self.menuViewController = nil
+    func addMenu() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let menuVC = storyboard.instantiateViewController(withIdentifier: "Menu")
+
+        if let menuVCInstance = menuVC as? MenuViewController {
+            self.menuViewController = menuVCInstance
+        }
+
+        if let viewController = self.selectedViewController {
+            viewController.view.addSubview(menuVC.view)
+            menuVC.didMove(toParent: viewController)
         }
     }
 }

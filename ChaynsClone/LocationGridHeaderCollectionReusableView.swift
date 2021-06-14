@@ -8,8 +8,5 @@
 import UIKit
 
 class LocationGridHeaderCollectionReusableView: UICollectionReusableView {
-    @IBOutlet weak var searchBar: UIView!
-    
-    
-    
+    @IBOutlet var searchBar: UIView!
 }

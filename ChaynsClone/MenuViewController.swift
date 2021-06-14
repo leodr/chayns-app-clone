@@ -31,6 +31,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         backgroundDim.alpha = 0
         sheet.transform = CGAffineTransform(translationX: 0, y: sheet.frame.height)
+        view.isUserInteractionEnabled = false
     }
 
     public func toggle() {
@@ -48,6 +49,9 @@ class MenuViewController: UIViewController {
 
         UIView.animate(withDuration: 0.2) {
             self.backgroundDim.alpha = 0.75
+        }
+
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut) {
             self.sheet.transform = CGAffineTransform(translationX: 0, y: 0)
         }
     }
@@ -58,6 +62,9 @@ class MenuViewController: UIViewController {
 
         UIView.animate(withDuration: 0.2) {
             self.backgroundDim.alpha = 0
+        }
+
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn) {
             self.sheet.transform = CGAffineTransform(translationX: 0, y: self.sheet.frame.height)
         }
     }
